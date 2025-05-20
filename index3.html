@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文章の理解を促すマニュアル</title>
+    <style>
+      :root {
+        --primary-color: #4a6fa5;
+        --secondary-color: #f8f9fa;
+        --text-color: #2c3e50;
+        --accent-color: #6c757d;
+        --highlight-color: #e9ecef;
+        --box-color: #f8f9fa;
+        --border-color: #dee2e6;
+      }
+
+      body {
+        font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+          "Hiragino Sans", Meiryo, sans-serif;
+        line-height: 1.8;
+        color: var(--text-color);
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        background-color: #fff;
+      }
+
+      h1 {
+        text-align: center;
+        color: var(--text-color);
+        font-size: 2.2em;
+        margin-bottom: 0.5em;
+        font-weight: 600;
+      }
+
+      h2 {
+        color: var(--text-color);
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 0.5em;
+        margin-top: 2.5em;
+        font-weight: 600;
+      }
+
+      h3 {
+        color: var(--text-color);
+        margin-top: 1.5em;
+        font-weight: 600;
+      }
+
+      .subtitle {
+        text-align: center;
+        color: var(--accent-color);
+        font-size: 1.1em;
+        margin-bottom: 3em;
+        font-weight: 400;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1.5em 0;
+        border: 1px solid var(--border-color);
+      }
+
+      th,
+      td {
+        padding: 12px 15px;
+        border: 1px solid var(--border-color);
+        text-align: left;
+      }
+
+      th {
+        background-color: var(--secondary-color);
+        font-weight: 600;
+      }
+
+      .emoji {
+        font-size: 1.1em;
+        margin-right: 0.5em;
+        opacity: 0.9;
+      }
+
+      .template-box {
+        background-color: var(--box-color);
+        padding: 20px;
+        border-radius: 8px;
+        margin: 1.5em 0;
+        border: 1px solid var(--border-color);
+      }
+
+      .template-title {
+        color: var(--text-color);
+        font-weight: 600;
+        margin-bottom: 1em;
+      }
+
+      .example-box {
+        background-color: var(--highlight-color);
+        padding: 20px;
+        border-radius: 8px;
+        margin: 1.5em 0;
+        border: 1px solid var(--border-color);
+      }
+
+      .note {
+        background-color: var(--secondary-color);
+        padding: 20px;
+        border-radius: 8px;
+        margin: 1.5em 0;
+        border-left: 4px solid var(--accent-color);
+      }
+
+      .tone-table {
+        background-color: var(--box-color);
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid var(--border-color);
+      }
+
+      .tone-example {
+        color: var(--accent-color);
+        font-weight: 500;
+      }
+
+      ul {
+        padding-left: 1.2em;
+      }
+
+      li {
+        margin-bottom: 0.5em;
+      }
+
+      p {
+        margin: 1em 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><span class="emoji">📘</span>文章の理解を促すマニュアル</h1>
+    <p class="subtitle">
+      — 目的別分類・フォーマット統一・トーン調整の実践手引き—
+    </p>
+
+    <h2>【第1章】全体方針：伝わる文章とは</h2>
+    <ul>
+      <li>文章は「情報」ではなく「判断と行動を導く設計図」として書く。</li>
+      <li>読む人の理解を前提に構成する（専門用語の多用は避ける）</li>
+      <li>要点が一目でわかるように構造化する</li>
+      <li>感情や緊急度を伝えるために"トーン"を操作する</li>
+    </ul>
+
+    <h2>【第2章】まず行うべき分類作業</h2>
+    <p>文章の内容を、以下の目的ごとに分類する。</p>
+
+    <table>
+      <tr>
+        <th>分類カテゴリ</th>
+        <th>主な内容例</th>
+        <th>意図・目的</th>
+      </tr>
+      <tr>
+        <td><span class="emoji">✅</span>目的</td>
+        <td>「なぜこの文章が存在するのか」</td>
+        <td>共感・納得を引き出す</td>
+      </tr>
+      <tr>
+        <td><span class="emoji">🧩</span>用途</td>
+        <td>「どのような場面で使うのか」</td>
+        <td>自分に関係あるかを判断させる</td>
+      </tr>
+      <tr>
+        <td><span class="emoji">🎯</span>役割</td>
+        <td>「何をしてほしいのか、どうすればいいか」</td>
+        <td>行動や理解を促す</td>
+      </tr>
+    </table>
+
+    <div class="example-box">
+      <h3>例）障害者就労支援サービスの紹介文</h3>
+      <p>
+        <span class="emoji">✅</span>目的：「多様な働き方を知ってもらうため」
+      </p>
+      <p>
+        <span class="emoji">🧩</span
+        >用途：「A型・B型・一般就労の違いを比較したいとき」
+      </p>
+      <p>
+        <span class="emoji">🎯</span
+        >役割：「自分に合う選択肢を見つけて、次の行動に移す」
+      </p>
+    </div>
+
+    <h2>【第3章】フォーマット統一のルール</h2>
+    <h3><span class="emoji">📐</span>分類ごとの標準テンプレート</h3>
+
+    <div class="template-box">
+      <div class="template-title">
+        <span class="emoji">✅</span>【目的】を書くときのテンプレート
+      </div>
+      <ul>
+        <li>この文章は、〇〇を目的として作成されています。</li>
+        <li>
+          本資料の目的は、〇〇について正確かつ分かりやすくお伝えすることです。
+        </li>
+      </ul>
+    </div>
+
+    <div class="template-box">
+      <div class="template-title">
+        <span class="emoji">🧩</span>【用途】を書くときのテンプレート
+      </div>
+      <ul>
+        <li>この情報は、〇〇のような場面で役立ちます。</li>
+        <li>以下のような方におすすめの内容です：</li>
+      </ul>
+    </div>
+
+    <div class="template-box">
+      <div class="template-title">
+        <span class="emoji">🎯</span>【役割】を書くときのテンプレート
+      </div>
+      <ul>
+        <li>あなたにお願いしたいのは、〇〇です。</li>
+        <li>次のステップは〇〇です。</li>
+      </ul>
+    </div>
+
+    <div class="note">
+      <span class="emoji">📌</span
+      >補足：3つを冒頭にセットで書くと、読者は「なぜ読むべきか」「自分に関係あるか」「どう動けばよいか」を瞬時に判断できます。
+    </div>
+
+    <h2>【第4章】共通項を見つけてパターン化する</h2>
+    <p>
+      <span class="emoji">🔁</span
+      >似た情報はひとつの「表」や「比較リスト」にまとめる
+    </p>
+
+    <div class="example-box">
+      <table>
+        <tr>
+          <th>働き方</th>
+          <th>雇用形態</th>
+          <th>賃金</th>
+          <th>対象</th>
+        </tr>
+        <tr>
+          <td>A型</td>
+          <td>雇用契約あり</td>
+          <td>最低賃金以上</td>
+          <td>働ける力がある人</td>
+        </tr>
+        <tr>
+          <td>B型</td>
+          <td>雇用契約なし</td>
+          <td>工賃</td>
+          <td>働く訓練が必要な人</td>
+        </tr>
+      </table>
+      <p>→ 「比較して選ぶ」ようにしたい場合はこのフォーマット。</p>
+      <p>→ 複数の選択肢を"並列"に見せることで、読者の判断が早くなる。</p>
+    </div>
+
+    <h2>【第5章】トーンを使い分けて伝える力を強化する</h2>
+    <h3><span class="emoji">🎙️</span>トーンの使い方（目的に応じて変える）</h3>
+
+    <div class="tone-table">
+      <table>
+        <tr>
+          <th>用途</th>
+          <th>トーン例</th>
+          <th>表現スタイル</th>
+        </tr>
+        <tr>
+          <td>注意喚起</td>
+          <td>強く・太字・色付きなど</td>
+          <td class="tone-example">⚠重要：必ずご確認ください。</td>
+        </tr>
+        <tr>
+          <td>共感喚起</td>
+          <td>やわらかく・語り口調</td>
+          <td class="tone-example">
+            きっとあなたもこんな経験があると思います。
+          </td>
+        </tr>
+        <tr>
+          <td>行動促進</td>
+          <td>明確・簡潔・断定口調</td>
+          <td class="tone-example">今すぐ、〇〇してください。</td>
+        </tr>
+        <tr>
+          <td>理解補助</td>
+          <td>丁寧・補足的</td>
+          <td class="tone-example">※〇〇とは、〜を意味します。</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="note">
+      <h3><span class="emoji">🎯</span>特に伝えたいことは目立たせる工夫を：</h3>
+      <ul>
+        <li>アイコン（✅ 🔷 ⚠）や枠囲み（ボックス）を使う</li>
+        <li>文体や語尾に変化をつけて読者の意識を引く</li>
+      </ul>
+    </div>
+  </body>
+</html>
