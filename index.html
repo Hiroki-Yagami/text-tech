@@ -15,6 +15,48 @@
         --border-color: #dee2e6;
       }
 
+      .global-nav {
+        background-color: var(--primary-color);
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav-title {
+        color: white;
+        font-size: 1.2em;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.9em;
+        opacity: 0.9;
+        transition: opacity 0.2s;
+      }
+
+      .nav-links a:hover {
+        opacity: 1;
+      }
+
       body {
         font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
           "Hiragino Sans", Meiryo, sans-serif;
@@ -142,6 +184,17 @@
     </style>
   </head>
   <body>
+    <nav class="global-nav">
+      <div class="nav-container">
+        <a href="index.html" class="nav-title">文章術マニュアル</a>
+        <div class="nav-links">
+          <a href="index.html">伝わる文章</a>
+          <a href="index2.html">発見を与える</a>
+          <a href="index3.html">理解を促す</a>
+        </div>
+      </div>
+    </nav>
+
     <h1><span class="emoji">📘</span>伝わる文章を書くためのマニュアル</h1>
     <p class="subtitle">〜読み手に「伝わる」「わかる」ための技術〜</p>
 
